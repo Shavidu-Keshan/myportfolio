@@ -1,77 +1,74 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-  }
-  
-  .nav-brand {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top of the page */
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for emphasis */
+}
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.nav-menu li a:hover {
+  color: #3b82f6;
+}
+
+.hamburger {
+  display: none; /* Hidden by default */
+}
+
+/* Responsive nav menu */
+@media (max-width: 768px) {
   .nav-menu {
-    list-style-type: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-  }
-  
-  .nav-menu li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-  }
-  
-  .nav-menu li a:hover {
-    color: #3b82f6;
-  }
-  
-  /* Hides the nav menu on small screens */
-  @media (max-width: 768px) {
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #f8f9fa;
-      padding: 20px 0;
-      gap: 15px;
-    }
-  
-    .nav-menu.show {
-      display: flex;
-    }
-  
-    .nav-menu li {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .hamburger-line {
-      width: 30px;
-      height: 3px;
-      background-color: #000;
-      margin: 5px;
-    }
-  }
-  
-  /* Hide hamburger menu on larger screens */
-  .hamburger {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    gap: 15px;
   }
-  
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
+
+  .nav-menu.show {
+    display: flex;
   }
-  
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px;
+  }
+}
