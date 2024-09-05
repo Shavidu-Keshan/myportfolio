@@ -1,12 +1,17 @@
-// File: src/components/Home.js
+
 
 import React from 'react';
 import './Home.css';
+import Nav from './Nav';
 
 const Home = () => {
   return (
+    
+    
     <section id="home" className="home">
+        
       <div className="home-content">
+        
         <h1>Hi, I&apos;m <span className="highlight">Marlon</span><br /> Web Designer</h1>
         <button className="contact-btn">Contact</button>
         <div className="social-icons">
