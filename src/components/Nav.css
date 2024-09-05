@@ -1,0 +1,31 @@
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .nav-menu li a:hover {
+    color: #3b82f6;
+  }
+  
