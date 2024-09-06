@@ -1,0 +1,106 @@
+/* General section styles */
+.skills-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3b82f6;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  
+  .underline {
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #3b82f6;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  /* Content layout */
+  .skills-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skills-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .skills-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .skills-text h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .skills-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Skill items */
+  .skill-item {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .skill-percentage {
+    float: right;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .filled-bar {
+    height: 100%;
+    background-color: #3b82f6;
+    border-radius: 20px;
+  }
+  
+  /* Skills image */
+  .skills-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .skills-details {
+      flex-direction: column;
+    }
+  
+    .skills-text {
+      text-align: center;
+    }
+  }
+  
