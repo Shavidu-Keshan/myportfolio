@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css';
 import Nav from './Nav';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Home = () => {
   return (
@@ -17,9 +19,7 @@ const Home = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance">
-              <i className="fab fa-behance"></i>
-            </a>
+            
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <i className="fab fa-github"></i>
             </a>
