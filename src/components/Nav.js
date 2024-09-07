@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Nav.css';
 
 const Nav = () => {
@@ -6,6 +7,10 @@ const Nav = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -17,17 +22,20 @@ const Nav = () => {
         <div className="hamburger-line"></div>
       </div>
       <ul className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#contact">Contact</a></li> {/* This will show fully now */}
+        {/* Use Link to navigate and close the menu after clicking */}
+        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+        <li><Link to="/skills" onClick={closeMenu}>Skills</Link></li>
+        <li><Link to="/work" onClick={closeMenu}>Projects</Link></li>
+        <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
       </ul>
     </nav>
   );
 };
 
 export default Nav;
+
+
 
 
 

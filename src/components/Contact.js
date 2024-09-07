@@ -53,7 +53,7 @@ const Contact = () => {
             required
           />
         </div>
-        <button type="submit" className="submit-button">Enviar</button>
+        <button type="submit" className="submit-button">Send</button>
       </form>
     </section>
   );

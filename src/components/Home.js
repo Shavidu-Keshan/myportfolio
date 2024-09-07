@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import Nav from './Nav';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -27,8 +27,9 @@ const Home = () => {
           </div>
         </div>
         <div className="home-image">
-          {/* Use the absolute path since the image is in the public folder */}
-          <img src="/Image/shavidu.jpg" alt="Shavidu Keshan" />
+          
+        <img src="/Image/shavidu.jpg" alt="Shavidu Keshan" />
+
         </div>
       </section>
     </>
