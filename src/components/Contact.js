@@ -22,7 +22,7 @@ const Contact = () => {
         'service_b6d556c', // Replace with your EmailJS service ID
         'template_ntg03jo', // Replace with your EmailJS template ID
         formData, // Pass form data to the template
-        'YOUR_USER_ID' // Replace with your EmailJS user ID
+        '8UC5-_XlwLrspg0ex' // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <h2 className="section-title">
-        Contact <span className="underline"></span>
+        Contact Me<span className="underline"></span>
       </h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="input-group">

@@ -10,18 +10,19 @@ const About = () => {
           <div className="personal-info">
             <h3>Personal Information</h3>
             <ul>
-              <li><strong>Full Name:</strong> Shavidu Keshan</li>
-              <li><strong>Birthday:</strong> January 15, 1995</li>
+              <li><strong>Full Name:</strong> Jayasekara Kankanamge Shavidu Keshan</li>
+              <li><strong>Birthday:</strong> November 20, 2000</li>
               <li><strong>Nationality:</strong> Sri Lankan</li>
               <li><strong>Languages:</strong> English, Sinhala</li>
+              <li><strong>Gmail:</strong> shavidu4321@gmail.com</li>
             </ul>
           </div>
           <div className="education-info">
             <h3>Education</h3>
             <ul>
-              <li><strong>University:</strong> University of Colombo</li>
-              <li><strong>Degree:</strong> BSc in Computer Science</li>
-              <li><strong>School:</strong> Royal College Colombo</li>
+              <li><strong>University:</strong> Sabaragamuwa University of Sri Lanka</li>
+              <li><strong>Degree:</strong> BSc(Hons) in Computing and Information Systems</li>
+              <li><strong>School:</strong> H / Weerakatiya Rajapaksha Central college </li>
             </ul>
           </div>
         </div>

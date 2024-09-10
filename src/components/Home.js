@@ -4,6 +4,7 @@ import Nav from './Nav';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link } from 'react-router-dom';
 
+
 const Home = () => {
   return (
     <>
